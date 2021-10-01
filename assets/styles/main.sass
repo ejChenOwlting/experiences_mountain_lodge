@@ -1,0 +1,16 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@import './variables'
+@import './base'
+@import './transition'
+
+@layer components
+  .btn
+    @apply block py-2 px-6 shadow-red text-center tracking-wide
+    background-image: linear-gradient($color-red, $color-background)
+    transition: background-image .2s
+
+    &:hover
+      background-image: linear-gradient($color-red-light, $color-red)

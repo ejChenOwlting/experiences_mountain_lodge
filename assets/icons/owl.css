@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'owl';
+  src: url('../font/owl.eot?96349092');
+  src: url('../font/owl.eot?96349092#iefix') format('embedded-opentype'),
+       url('../font/owl.woff2?96349092') format('woff2'),
+       url('../font/owl.woff?96349092') format('woff'),
+       url('../font/owl.ttf?96349092') format('truetype'),
+       url('../font/owl.svg?96349092#owl') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'owl';
+    src: url('../font/owl.svg?96349092#owl') format('svg');
+  }
+}
+*/
+
+ [class^="owl-"]:before, [class*=" owl-"]:before {
+  font-family: "owl";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.owl-adjust:before { content: '\e800'; }
+.owl-alert:before { content: '\e801'; }
+.owl-arrow-down:before { content: '\e802'; }
+.owl-arrow-h-switch:before { content: '\e803'; }
+.owl-arrow-left:before { content: '\e804'; }
+.owl-arrow-left2right:before { content: '\e805'; }
+.owl-arrow-next:before { content: '\e806'; }
+.owl-arrow-reload:before { content: '\e807'; }
+.owl-arrow-return:before { content: '\e808'; }
+.owl-arrow-right:before { content: '\e809'; }
+.owl-arrow-top-right:before { content: '\e80a'; }
+.owl-arrow-top:before { content: '\e80b'; }
+.owl-arrow-top2down:before { content: '\e80c'; }
+.owl-arrow-update:before { content: '\e80d'; }
+.owl-arrow-v-switch:before { content: '\e80e'; }
+.owl-audio:before { content: '\e80f'; }
+.owl-briefcase:before { content: '\e810'; }
+.owl-bullhorn:before { content: '\e811'; }
+.owl-calendar:before { content: '\e812'; }
+.owl-card-member:before { content: '\e813'; }
+.owl-camera-slr:before { content: '\e814'; }
+.owl-card:before { content: '\e815'; }
+.owl-caret-bottom:before { content: '\e816'; }
+.owl-caret-left:before { content: '\e817'; }
+.owl-caret-left2right:before { content: '\e818'; }
+.owl-caret-right:before { content: '\e819'; }
+.owl-caret-top:before { content: '\e81a'; }
+.owl-caret-top2down:before { content: '\e81b'; }
+.owl-circle-clock-o:before { content: '\e81c'; }
+.owl-code:before { content: '\e81d'; }
+.owl-cloud:before { content: '\e81e'; }
+.owl-compass:before { content: '\e81f'; }
+.owl-copy:before { content: '\e820'; }
+.owl-delete:before { content: '\e821'; }
+.owl-direction-down-double:before { content: '\e822'; }
+.owl-direction-down:before { content: '\e823'; }
+.owl-direction-first:before { content: '\e824'; }
+.owl-direction-last:before { content: '\e825'; }
+.owl-direction-left:before { content: '\e826'; }
+.owl-direction-left2right:before { content: '\e827'; }
+.owl-direction-right:before { content: '\e828'; }
+.owl-direction-top-double:before { content: '\e829'; }
+.owl-direction-top:before { content: '\e82a'; }
+.owl-direction-top2down:before { content: '\e82b'; }
+.owl-earth:before { content: '\e82c'; }
+.owl-edit:before { content: '\e82d'; }
+.owl-editor-attachment:before { content: '\e82e'; }
+.owl-fire:before { content: '\e82f'; }
+.owl-flag:before { content: '\e830'; }
+.owl-fork:before { content: '\e831'; }
+.owl-format-download:before { content: '\e832'; }
+.owl-format-file:before { content: '\e833'; }
+.owl-format-folder:before { content: '\e834'; }
+.owl-format-gif:before { content: '\e835'; }
+.owl-format-jpg:before { content: '\e836'; }
+.owl-format-left:before { content: '\e837'; }
+.owl-format-mail:before { content: '\e838'; }
+.owl-format-pdf:before { content: '\e839'; }
+.owl-format-right:before { content: '\e83a'; }
+.owl-format-text:before { content: '\e83b'; }
+.owl-format-upload:before { content: '\e83c'; }
+.owl-gear-double:before { content: '\e83d'; }
+.owl-gear:before { content: '\e83e'; }
+.owl-gift:before { content: '\e83f'; }
+.owl-grid-three-h:before { content: '\e840'; }
+.owl-grid-three:before { content: '\e841'; }
+.owl-hand-fucek:before { content: '\e842'; }
+.owl-hand-like:before { content: '\e843'; }
+.owl-hand-looser:before { content: '\e844'; }
+.owl-home:before { content: '\e845'; }
+.owl-inbox:before { content: '\e846'; }
+.owl-key:before { content: '\e847'; }
+.owl-layout:before { content: '\e848'; }
+.owl-lightbulb:before { content: '\e849'; }
+.owl-line-chart:before { content: '\e84a'; }
+.owl-link-intact:before { content: '\e84b'; }
+.owl-list-important:before { content: '\e84c'; }
+.owl-list:before { content: '\e84d'; }
+.owl-load:before { content: '\e84e'; }
+.owl-location:before { content: '\e84f'; }
+.owl-lock-open:before { content: '\e850'; }
+.owl-lock:before { content: '\e851'; }
+.owl-map:before { content: '\e852'; }
+.owl-message-double:before { content: '\e853'; }
+.owl-menu:before { content: '\e854'; }
+.owl-message:before { content: '\e855'; }
+.owl-mobile:before { content: '\e856'; }
+.owl-monitor:before { content: '\e857'; }
+.owl-more-h:before { content: '\e858'; }
+.owl-more-v:before { content: '\e859'; }
+.owl-panel:before { content: '\e85a'; }
+.owl-phone:before { content: '\e85b'; }
+.owl-pin:before { content: '\e85c'; }
+.owl-rank-heart-half:before { content: '\e85d'; }
+.owl-rank-heart:before { content: '\e85e'; }
+.owl-rank-star-half:before { content: '\e85f'; }
+.owl-rank-star:before { content: '\e860'; }
+.owl-save-v:before { content: '\e861'; }
+.owl-search:before { content: '\e862'; }
+.owl-security:before { content: '\e863'; }
+.owl-send:before { content: '\e864'; }
+.owl-share:before { content: '\e865'; }
+.owl-shopping-bag:before { content: '\e866'; }
+.owl-shopping-cart:before { content: '\e867'; }
+.owl-sign-lightning:before { content: '\e868'; }
+.owl-sign-photo:before { content: '\e869'; }
+.owl-sign-video:before { content: '\e86a'; }
+.owl-social-android-square:before { content: '\e86b'; }
+.owl-social-android:before { content: '\e86c'; }
+.owl-social-apple-square:before { content: '\e86d'; }
+.owl-social-apple:before { content: '\e86e'; }
+.owl-social-fb-square:before { content: '\e86f'; }
+.owl-social-fb:before { content: '\e870'; }
+.owl-social-git-square:before { content: '\e871'; }
+.owl-social-git:before { content: '\e872'; }
+.owl-social-google-square:before { content: '\e873'; }
+.owl-social-google:before { content: '\e874'; }
+.owl-social-ig-square:before { content: '\e875'; }
+.owl-social-ig:before { content: '\e876'; }
+.owl-social-line-square:before { content: '\e877'; }
+.owl-social-line:before { content: '\e878'; }
+.owl-social-paypal-square:before { content: '\e879'; }
+.owl-social-paypal:before { content: '\e87a'; }
+.owl-social-twitter-square:before { content: '\e87b'; }
+.owl-social-twitter:before { content: '\e87c'; }
+.owl-social-youtube-square:before { content: '\e87d'; }
+.owl-social-youtube:before { content: '\e87e'; }
+.owl-sort-bottom2down:before { content: '\e87f'; }
+.owl-sort-bottom2top:before { content: '\e880'; }
+.owl-status-add:before { content: '\e881'; }
+.owl-status-ban:before { content: '\e882'; }
+.owl-status-check:before { content: '\e883'; }
+.owl-status-circle-info:before { content: '\e884'; }
+.owl-status-error:before { content: '\e885'; }
+.owl-status-question-mark:before { content: '\e886'; }
+.owl-status-remove:before { content: '\e887'; }
+.owl-status-triangle-warning:before { content: '\e888'; }
+.owl-status-warning:before { content: '\e889'; }
+.owl-sup-add:before { content: '\e88a'; }
+.owl-sup-arrow-down:before { content: '\e88b'; }
+.owl-sup-arrow-left:before { content: '\e88c'; }
+.owl-sup-arrow-right:before { content: '\e88d'; }
+.owl-sup-arrow-top:before { content: '\e88e'; }
+.owl-sup-caret-down:before { content: '\e88f'; }
+.owl-sup-caret-left:before { content: '\e890'; }
+.owl-sup-caret-right:before { content: '\e891'; }
+.owl-sup-caret-top:before { content: '\e892'; }
+.owl-sup-check:before { content: '\e893'; }
+.owl-sup-error:before { content: '\e894'; }
+.owl-sup-fire:before { content: '\e895'; }
+.owl-sup-heart:before { content: '\e896'; }
+.owl-sup-info:before { content: '\e897'; }
+.owl-sup-lightning:before { content: '\e898'; }
+.owl-sup-money:before { content: '\e899'; }
+.owl-sup-more:before { content: '\e89a'; }
+.owl-sup-question-mark:before { content: '\e89b'; }
+.owl-sup-remove:before { content: '\e89c'; }
+.owl-sup-star:before { content: '\e89d'; }
+.owl-sup-warning:before { content: '\e89e'; }
+.owl-symbol-money-eur:before { content: '\e89f'; }
+.owl-symbol-money-jpy:before { content: '\e8a0'; }
+.owl-symbol-money-square-eur:before { content: '\e8a1'; }
+.owl-symbol-money-square-jpy:before { content: '\e8a2'; }
+.owl-symbol-money-square-thb:before { content: '\e8a3'; }
+.owl-symbol-money-square-usd:before { content: '\e8a4'; }
+.owl-symbol-money-thb:before { content: '\e8a5'; }
+.owl-symbol-money-usd:before { content: '\e8a6'; }
+.owl-symbol-percent:before { content: '\e8a7'; }
+.owl-table:before { content: '\e8a8'; }
+.owl-tag:before { content: '\e8a9'; }
+.owl-target:before { content: '\e8aa'; }
+.owl-ticket:before { content: '\e8ab'; }
+.owl-trash:before { content: '\e8ac'; }
+.owl-user-group:before { content: '\e8ad'; }
+.owl-user:before { content: '\e8ae'; }
+.owl-video-microphone:before { content: '\e8af'; }
+.owl-video:before { content: '\e8b0'; }
+.owl-moon:before { content: '\e8b1'; }
+.owl-sale:before { content: '\e8b2'; }
+.owl-cancel-listing:before { content: '\e8b3'; }
+.owl-bidding:before { content: '\e8b4'; }
+.owl-bid:before { content: '\e8b5'; }
+.owl-check-circle:before { content: '\e8b6'; }
