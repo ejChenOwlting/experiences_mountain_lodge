@@ -35,7 +35,7 @@ $p-top: 90px
 $p-bottom: 36px
 
 .hero-section
-  @apply h-full bg-cover relative
+  @apply h-full bg-cover relative bg-background
   background-image: url('https://static.owlting.com/experiences_mountain_lodge/hero.png')
   padding-top: $p-top
   padding-bottom: $p-bottom

@@ -12,20 +12,20 @@
         height="36"
       >
       <div class="flex flex-col md:flex-row mb-5">
-        <div class="block md:mr-12 mb-4 md:mb-0">
+        <div class="md:mr-12 mb-4 md:mb-0" style="max-width: 340px">
           <img
             src="https://static.owlting.com/experiences_mountain_lodge/tickets-2.png"
             alt="tickets-2"
             width="340"
-            height="238"
+            height="241"
           >
         </div>
-        <div>
+        <div style="max-width: 340px">
           <img
             src="https://static.owlting.com/experiences_mountain_lodge/tickets-20.png"
             alt="tickets-2"
             width="340"
-            height="238"
+            height="241"
           >
         </div>
       </div>
