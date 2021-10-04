@@ -2,7 +2,7 @@
   <section class="features-section">
     <div class="container mx-auto text-center flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-features.png')"
+        src="https://static.owlting.com/experiences_mountain_lodge/title-features.png"
         class="section-title"
         alt="title-features"
         width="400"
@@ -25,7 +25,7 @@
           <img
             width="160"
             height="72"
-            :src="require(`~/assets/img/feature-${index}.png`)"
+            :src="`https://static.owlting.com/experiences_mountain_lodge/feature-${index}.png`"
             :alt="`feature_${index}`"
           >
         </li>
@@ -44,9 +44,9 @@ export default {
 <style lang="sass" scoped>
 .features-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-features-m.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-features-m.jpg')
   @screen md
-    background-image: url('~/assets/img/bg-features.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-features.png')
 
 .feature-item
   @apply w-1/2 mb-12

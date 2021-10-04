@@ -2,7 +2,7 @@
   <section class="environment-section">
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-environment.png')"
+        src="https://static.owlting.com/experiences_mountain_lodge/title-environment.png"
         class="section-title"
         alt="title-environment"
         width="162"
@@ -21,7 +21,7 @@
           @click="openImgModal(1)"
         >
           <img
-            :src="require('~/assets/img/environment-1.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/environment-1.png"
             alt="environment-1"
             width="400"
             height="350"
@@ -32,7 +32,7 @@
           @click="openImgModal(2)"
         >
           <img
-            :src="require('~/assets/img/environment-2.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/environment-2.png"
             alt="environment-2"
             width="400"
             height="350"
@@ -47,7 +47,7 @@
             @click="openImgModal(3)"
           >
             <img
-              :src="require('~/assets/img/environment-3.png')"
+              src="https://static.owlting.com/experiences_mountain_lodge/environment-3.png"
               alt="environment-3"
               width="400"
               height="350"
@@ -58,7 +58,7 @@
             @click="openImgModal(4)"
           >
             <img
-              :src="require('~/assets/img/environment-4.png')"
+              src="https://static.owlting.com/experiences_mountain_lodge/environment-4.png"
               alt="environment-4"
               width="400"
               height="350"
@@ -84,7 +84,7 @@
         <img
           class="w-full mx-auto"
           style="max-width: 800px"
-          :src="require(`~/assets/img/environment-${activeImgIndex}.png`)"
+          src="https://static.owlting.com/experiences_mountain_lodge/environment-${activeImgIndex}.png"
           :alt="`environment-${activeImgIndex}`"
           width="500"
           height="400"

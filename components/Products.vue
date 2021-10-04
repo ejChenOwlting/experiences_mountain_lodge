@@ -3,20 +3,21 @@
     <div class="container mx-auto text-center">
       <div class="flex flex-col items-center">
         <a
-          class="inline-block mb-12 md:mb-20"
+          class="banner-container block mb-12 md:mb-20"
           href="http://www.eatgether.com/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             class="hidden md:block"
-            :src="require('~/assets/img/eatgether.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/eatgether.png"
             alt="eatgether"
             width="1000"
             height="320"
           >
           <img
             class="md:hidden"
-            :src="require('~/assets/img/eatgether-mobile.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/eatgether-mobile.png"
             alt="eatgether-mobile"
             width="1000"
             height="320"
@@ -24,20 +25,21 @@
         </a>
 
         <a
-          class="inline-block mb-24"
+          class="banner-container block mb-24"
           href="https://www.owlting.com/experiences/ldp/eastern-taiwan"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             class="hidden md:block"
-            :src="require('~/assets/img/experiences.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/experiences.png"
             alt="experiences"
             width="1000"
             height="320"
           >
           <img
             class="md:hidden"
-            :src="require('~/assets/img/experiences-mobile.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/experiences-mobile.png"
             alt="experiences-mobile"
             width="1000"
             height="320"
@@ -62,7 +64,7 @@
 
 <script>
 export default {
-  name: 'products-section',
+  name: 'ProductsSection',
   data () {
     return {
       productList: []
@@ -70,3 +72,16 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+.banner-container
+  @apply relative
+  &:after
+    @screen md
+      @apply absolute top-0 left-0 right-0 w-full h-full bg-background opacity-50
+      content: ''
+      transition: opacity .2s
+  &:hover
+    &:after
+      @apply opacity-0
+</style>

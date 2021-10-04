@@ -1,10 +1,13 @@
 <template>
   <section class="hero-section">
     <div class="container mx-auto md:flex md:justify-end">
-      <div class="hero-title relative z-10" style="max-width: 500px">
+      <div
+        class="hero-title"
+        style="max-width: 500px"
+      >
         <img
           class="md:mb-2"
-          :src="require('~/assets/img/logo.png')"
+          src="https://static.owlting.com/experiences_mountain_lodge/logo.png"
           alt="logo"
           width="455"
           height="185"
@@ -31,7 +34,7 @@ $p-bottom: 36px
 
 .hero-section
   @apply h-full bg-cover relative
-  background-image: url('~/assets/img/hero.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/hero.png')
   padding-top: $p-top
   padding-bottom: $p-bottom
 
@@ -43,7 +46,7 @@ $p-bottom: 36px
       @apply hidden
 
 .hero-title
-  @apply text-center flex flex-col justify-between h-full pb-20
+  @apply flex flex-col justify-between h-full pb-20 relative z-10
   height: calc(100vh - #{$p-top} - #{$p-bottom})
   @screen md
     @apply block w-1/2 px-6 pt-24 pb-0

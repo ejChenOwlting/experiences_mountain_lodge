@@ -6,7 +6,7 @@ export default {
   head: {
     title: '迷霧環山II - 巴卡羅的繼承者',
     htmlAttrs: {
-      lang: 'zh_tw'
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },

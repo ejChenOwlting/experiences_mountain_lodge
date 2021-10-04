@@ -25,12 +25,12 @@
             </a>
             <div>
               <a v-for="item in socialMediaList"
+                :key="item.icon"
                 class="mr-2"
                 target="_blank"
                 rel="noopener noreferrer"
                 :aria-label="item.icon"
                 :href="item.link"
-                :key="item.icon"
               >
                 <i style="font-size: 22px" :class="item.icon" />
               </a>
@@ -95,7 +95,7 @@
             rel="noopener noreferrer"
           >
             <img
-              :src="require('~/assets/img/apple-store.png')"
+              src="https://static.owlting.com/experiences_mountain_lodge/apple-store.png"
               alt="apple-store"
               width="100"
               height="30"
@@ -108,7 +108,7 @@
             rel="noopener noreferrer"
           >
             <img
-              :src="require('~/assets/img/google-play.png')"
+              src="https://static.owlting.com/experiences_mountain_lodge/google-play.png"
               alt="google-play"
               width="100"
               height="30"

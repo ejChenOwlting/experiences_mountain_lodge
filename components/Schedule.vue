@@ -5,14 +5,14 @@
   >
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-schedule.png')"
+        src="https://static.owlting.com/experiences_mountain_lodge/title-schedule.png"
         class="section-title"
         alt="title-schedule"
         width="209"
         height="35"
       >
       <div
-        class="md:flex md:justify-center w-full"
+        class="md:flex md:justify-center w-full text-center md:text-left"
         style="max-width: 720px"
       >
         <p class="md:w-1/2 md:px-6 mb-8 md:mb-0">
@@ -46,7 +46,7 @@ export default {
 <style lang="sass" scoped>
 .schedule-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-schedule-m.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-schedule-m.jpg')
   @screen md
-    background-image: url('~/assets/img/bg-schedule.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-schedule.png')
 </style>

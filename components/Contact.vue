@@ -8,7 +8,7 @@
         <div class="text-center">
           <img
             class="lawyer-img"
-            :src="require('~/assets/img/contact-lawyer.png')"
+            src="https://static.owlting.com/experiences_mountain_lodge/contact-lawyer.png"
             alt="lawyer"
             width="92"
             height="92"
@@ -44,8 +44,9 @@
     min-width: 92px
 
 .chat-group
-  @apply bg-white py-3 px-5 rounded-md relative ml-8
+  @apply bg-white py-3 px-5 rounded-2xl relative ml-8
   background-color: #343434
+  z-index: 1
 
   &:before
     @apply absolute top-0

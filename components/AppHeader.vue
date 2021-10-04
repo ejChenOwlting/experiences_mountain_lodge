@@ -8,21 +8,25 @@
           rel="noopener noreferrer"
         >
           <img
-            :src="require('~/assets/img/experiences-logo.svg')"
+            src="https://static.owlting.com/experiences_mountain_lodge/experiences-logo.svg"
             alt="experiences"
             width="185"
             height="40"
           >
         </a>
         <nav class="text-lg -mx-6 hidden md:flex">
-          <a
+          <div
             v-for="menu in menuList"
             :key="menu.hash"
-            :href="`#${menu.hash}`"
-            class="block px-6 cursor-pointer"
+            class="px-6"
           >
-            {{ menu.label }}
-          </a>
+            <a
+              :href="`#${menu.hash}`"
+              class="nav-item"
+            >
+              {{ menu.label }}
+            </a>
+          </div>
         </nav>
 
         <div
@@ -98,6 +102,19 @@ export default {
 
 header
   background: linear-gradient(180deg, rgba(28, 30, 43, 0.8) 0%, rgba(26, 28, 43, 0) 100%)
+
+.nav-item
+  @apply block cursor-pointer relative
+  &:after
+    @apply bg-white absolute left-0 bottom-0
+    content: ''
+    height: 2px
+    width: 0%
+    transition: width .2s
+
+  &:hover
+    &:after
+      width: 100%
 
 .menu-modal
   @apply fixed z-10 w-full left-0 right-0 bottom-0

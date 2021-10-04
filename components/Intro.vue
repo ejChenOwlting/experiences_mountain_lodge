@@ -6,7 +6,7 @@
     <div class="container mx-auto flex justify-end">
       <div class="md:w-1/2">
         <img
-          :src="require('~/assets/img/title-intro.png')"
+          src="https://static.owlting.com/experiences_mountain_lodge/title-intro.png"
           class="section-title"
           alt="title-intro"
           width="488"
@@ -24,9 +24,9 @@
 <style lang="sass" scoped>
 .intro-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-intro-m.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-intro-m.jpg')
   padding-top: 180px
   padding-bottom: 180px
   @screen md
-    background-image: url('~/assets/img/bg-intro.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-intro.png')
 </style>

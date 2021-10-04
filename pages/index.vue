@@ -29,7 +29,7 @@ export default {
 <style lang="sass" scoped>
 .sections-group
   @apply bg-cover bg-fixed
-  background-image: url('~/assets/img/bg-more-m.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-more-m.jpg')
   @screen md
-    background-image: url('~/assets/img/bg-more.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-more.jpg')
 </style>

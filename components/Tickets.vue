@@ -5,7 +5,7 @@
   >
     <div class="container mx-auto text-center flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-tickets.png')"
+        src="https://static.owlting.com/experiences_mountain_lodge/title-tickets.png"
         class="section-title"
         alt="title-features"
         width="221"
@@ -14,13 +14,13 @@
       <div class="flex flex-col md:flex-row mb-5">
         <img
           class="md:mr-12 mb-4 md:mb-0"
-          :src="require('~/assets/img/tickets-2.png')"
+          src="https://static.owlting.com/experiences_mountain_lodge/tickets-2.png"
           alt="tickets-2"
           width="340"
           height="238"
         >
         <img
-          :src="require('~/assets/img/tickets-20.png')"
+          src="https://static.owlting.com/experiences_mountain_lodge/tickets-20.png"
           alt="tickets-2"
           width="340"
           height="238"
@@ -52,7 +52,7 @@ export default {
 <style lang="sass" scoped>
 .tickets-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-tickets-m.png')
+  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-tickets-m.jpg')
   @screen md
-    background-image: url('~/assets/img/bg-tickets.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-tickets.png')
 </style>
