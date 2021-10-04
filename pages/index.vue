@@ -28,8 +28,15 @@ export default {
 
 <style lang="sass" scoped>
 .sections-group
-  @apply bg-cover bg-fixed
-  background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-more-m.jpg')
-  @screen md
-    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-more.jpg')
+  @apply relative
+  &:before
+    @apply top-0 right-0 left-0 bottom-0
+    content: ''
+    position: fixed
+    z-index: -1
+    background: url('https://static.owlting.com/experiences_mountain_lodge/bg-more-m.jpg') center 0 no-repeat
+    background-size: cover
+
+    @screen md
+      background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-more.jpg')
 </style>
