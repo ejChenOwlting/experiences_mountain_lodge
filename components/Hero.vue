@@ -3,7 +3,7 @@
     <div class="container mx-auto md:flex md:justify-end">
       <div class="hero-title">
         <div
-          class="h-full flex flex-col justify-between items-center md:block mx-auto md:mx-0"
+          class="h-full flex flex-col justify-between md:justify-end items-center mx-auto md:mx-0"
           style="max-width: 500px"
         >
           <img
@@ -51,5 +51,5 @@ $p-bottom: 36px
   @apply pb-20 relative z-10
   height: calc(100vh - #{$p-top} - #{$p-bottom})
   @screen md
-    @apply w-1/2 px-6 pt-24 pb-0
+    @apply w-1/2 px-6 pt-12 pb-28
 </style>
