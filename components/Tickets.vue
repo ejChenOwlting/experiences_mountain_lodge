@@ -1,11 +1,11 @@
 <template>
   <section
-    class="tickets-section"
     id="tickets"
+    class="tickets-section"
   >
     <div class="container mx-auto text-center flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-tickets.svg')"
+        :src="require('~/assets/img/title-tickets.png')"
         class="section-title"
         alt="title-features"
         width="221"
@@ -32,7 +32,6 @@
       </p>
       <a
         class="btn w-full"
-        style="max-width: 500px"
         href="https://www.owlting.com/experiences/products/6105?l=tw&curr=TWD&ct=TW"
         target="_blank"
         rel="noopener noreferrer"
@@ -53,5 +52,7 @@ export default {
 <style lang="sass" scoped>
 .tickets-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-tickets.png')
+  background-image: url('~/assets/img/bg-tickets-m.png')
+  @screen md
+    background-image: url('~/assets/img/bg-tickets.png')
 </style>

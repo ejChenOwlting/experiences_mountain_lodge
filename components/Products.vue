@@ -1,47 +1,49 @@
 <template>
   <section class="products-section">
-    <div class="container mx-auto">
-      <a
-        class="block w-full mb-12 md:mb-20"
-        href="http://www.eatgether.com/"
-        target="_blank"
-      >
-        <img
-          class="hidden md:block"
-          :src="require('~/assets/img/eatgether.png')"
-          alt="eatgether"
-          width="1000"
-          height="320"
+    <div class="container mx-auto text-center">
+      <div class="flex flex-col items-center">
+        <a
+          class="inline-block mb-12 md:mb-20"
+          href="http://www.eatgether.com/"
+          target="_blank"
         >
-        <img
-          class="md:hidden"
-          :src="require('~/assets/img/eatgether-mobile.png')"
-          alt="eatgether-mobile"
-          width="1000"
-          height="320"
-        >
-      </a>
+          <img
+            class="hidden md:block"
+            :src="require('~/assets/img/eatgether.png')"
+            alt="eatgether"
+            width="1000"
+            height="320"
+          >
+          <img
+            class="md:hidden"
+            :src="require('~/assets/img/eatgether-mobile.png')"
+            alt="eatgether-mobile"
+            width="1000"
+            height="320"
+          >
+        </a>
 
-      <a
-        class="block w-full mb-24"
-        href="https://www.owlting.com/experiences/ldp/eastern-taiwan"
-        target="_blank"
-      >
-        <img
-          class="hidden md:block"
-          :src="require('~/assets/img/experiences.png')"
-          alt="experiences"
-          width="1000"
-          height="320"
+        <a
+          class="inline-block mb-24"
+          href="https://www.owlting.com/experiences/ldp/eastern-taiwan"
+          target="_blank"
         >
-        <img
-          class="md:hidden"
-          :src="require('~/assets/img/experiences-mobile.png')"
-          alt="experiences-mobile"
-          width="1000"
-          height="320"
-        >
-      </a>
+          <img
+            class="hidden md:block"
+            :src="require('~/assets/img/experiences.png')"
+            alt="experiences"
+            width="1000"
+            height="320"
+          >
+          <img
+            class="md:hidden"
+            :src="require('~/assets/img/experiences-mobile.png')"
+            alt="experiences-mobile"
+            width="1000"
+            height="320"
+          >
+        </a>
+      </div>
 
       <div class="flex flex-col items-center">
         <h3 class="text-lg font-bold mb-6">
@@ -60,6 +62,11 @@
 
 <script>
 export default {
-  name: 'products-section'
+  name: 'products-section',
+  data () {
+    return {
+      productList: []
+    }
+  }
 }
 </script>

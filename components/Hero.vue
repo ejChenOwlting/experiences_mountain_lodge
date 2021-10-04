@@ -1,15 +1,16 @@
 <template>
   <section class="hero-section">
     <div class="container mx-auto md:flex md:justify-end">
-      <div class="hero-title relative z-10">
+      <div class="hero-title relative z-10" style="max-width: 500px">
         <img
+          class="md:mb-2"
           :src="require('~/assets/img/logo.png')"
           alt="logo"
           width="455"
           height="185"
         >
         <div>
-          <div class="tracking-widest mb-10">
+          <div class="tracking-widest mb-4 md:mb-6">
             〖全台唯一 兩天一夜實境解謎戲〗<br>奧丁丁獨家
           </div>
           <a
@@ -29,7 +30,7 @@ $p-top: 90px
 $p-bottom: 36px
 
 .hero-section
-  @apply h-screen bg-cover relative
+  @apply h-full bg-cover relative
   background-image: url('~/assets/img/hero.png')
   padding-top: $p-top
   padding-bottom: $p-bottom
@@ -42,8 +43,8 @@ $p-bottom: 36px
       @apply hidden
 
 .hero-title
-  @apply text-center flex flex-col justify-between h-full
+  @apply text-center flex flex-col justify-between h-full pb-20
   height: calc(100vh - #{$p-top} - #{$p-bottom})
   @screen md
-    @apply block w-1/2 px-6 py-32
+    @apply block w-1/2 px-6 pt-24 pb-0
 </style>

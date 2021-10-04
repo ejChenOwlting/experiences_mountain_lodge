@@ -2,7 +2,7 @@
   <section class="more-section">
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-more.svg')"
+        :src="require('~/assets/img/title-more.png')"
         class="section-title"
         alt="title-features"
         width="320"

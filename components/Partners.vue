@@ -2,7 +2,7 @@
   <section class="partners-section">
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-partners.svg')"
+        :src="require('~/assets/img/title-partners.png')"
         class="section-title"
         alt="title-partners"
         width="166"

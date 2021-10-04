@@ -2,7 +2,7 @@
   <section class="features-section">
     <div class="container mx-auto text-center flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-features.svg')"
+        :src="require('~/assets/img/title-features.png')"
         class="section-title"
         alt="title-features"
         width="400"
@@ -44,7 +44,9 @@ export default {
 <style lang="sass" scoped>
 .features-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-features.png')
+  background-image: url('~/assets/img/bg-features-m.png')
+  @screen md
+    background-image: url('~/assets/img/bg-features.png')
 
 .feature-item
   @apply w-1/2 mb-12

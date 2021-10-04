@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'https://www.owlting.com/favicon.ico' },
       {
         rel: 'preconnect',
         href: 'https://fonts.googleapis.com'
@@ -34,7 +34,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/styles/main.sass'
+    '~/assets/icons/css/owl.css',
+    '~/assets/styles/main.sass'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -59,5 +60,17 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  server: {
+    port: 8880,
+    host: '0.0.0.0'
+  },
+
+  postcss: {
+    plugins: [
+      require('autoprefixer'),
+      require('cssnano')
+    ]
   }
 }

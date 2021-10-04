@@ -2,7 +2,7 @@
   <section class="environment-section">
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-environment.svg')"
+        :src="require('~/assets/img/title-environment.png')"
         class="section-title"
         alt="title-environment"
         width="162"
@@ -70,8 +70,8 @@
 
     <transition name="fade">
     <div
-      v-body-scroll-lock="isOpenImgModal"
       v-if="isOpenImgModal"
+      v-body-scroll-lock="isOpenImgModal"
       class="img-modal"
     >
       <div class="container mx-auto flex items-center h-screen relative">
@@ -79,7 +79,7 @@
           class="absolute top-10 right-0 cursor-pointer"
           @click="closeImgModal"
         >
-          X
+          <i class="owl-status-error" style="font-size: 20px" />
         </div>
         <img
           class="w-full mx-auto"
@@ -140,6 +140,6 @@ export default {
       @apply opacity-30
 
 .img-modal
-  @apply fixed top-0 right-0 left-0 bottom-0 w-screen h-screen z-30 px-6
+  @apply fixed top-0 right-0 left-0 bottom-0 w-full h-full z-30 px-6
   background: rgba($color-background, .85)
 </style>

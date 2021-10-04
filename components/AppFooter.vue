@@ -25,14 +25,14 @@
             </a>
             <div>
               <a v-for="item in socialMediaList"
-                class="link"
+                class="mr-2"
                 target="_blank"
                 rel="noopener noreferrer"
-                :aria-label="item.name"
+                :aria-label="item.icon"
                 :href="item.link"
-                :key="item.name"
+                :key="item.icon"
               >
-                <i :class="item.icon" />
+                <i style="font-size: 22px" :class="item.icon" />
               </a>
             </div>
           </div>
@@ -142,6 +142,11 @@ export default {
         { label: '使用條款', link: 'https://static.owlting.com/experiences/%E5%A5%A7%E4%B8%81%E4%B8%81%E9%AB%94%E9%A9%97_%E4%BD%BF%E7%94%A8%E8%80%85%E6%A2%9D%E6%AC%BE_20191101.pdf' },
         { label: '隱私政策', link: 'https://www.owlting.com/experiences/privacy' },
         { label: 'Cookie 政策', link: 'https://www.owlting.com/portal/about/cookie-policy' }
+      ],
+      socialMediaList: [
+        { icon: 'owl-social-fb', link: 'https://www.facebook.com/OwlTing/' },
+        { icon: 'owl-social-ig', link: 'https://www.instagram.com/owlting_experiences/?igshid=juauvo8fatpk' },
+        { icon: 'owl-social-youtube', link: 'https://www.youtube.com/playlist?list=PLUKsRY-b8NbLVcz2YY6ctPQEmD0cpJeT5' }
       ]
     }
   }

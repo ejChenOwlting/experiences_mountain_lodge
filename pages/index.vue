@@ -5,12 +5,14 @@
     <intro />
     <features />
     <tickets />
-    <more />
-    <schedule />
-    <environment />
-    <contact />
-    <partners />
-    <products />
+    <div class="sections-group">
+      <more />
+      <schedule />
+      <environment />
+      <contact />
+      <partners />
+      <products />
+    </div>
     <app-footer />
   </main>
 </template>
@@ -23,3 +25,11 @@ export default {
   mixins: [mediaQuery]
 }
 </script>
+
+<style lang="sass" scoped>
+.sections-group
+  @apply bg-cover bg-fixed
+  background-image: url('~/assets/img/bg-more-m.png')
+  @screen md
+    background-image: url('~/assets/img/bg-more.png')
+</style>

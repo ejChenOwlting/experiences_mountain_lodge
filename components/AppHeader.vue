@@ -1,7 +1,7 @@
 <template>
   <header class="fixed top-0 left-0 right-0 py-5 z-20 px-6">
     <div class="container mx-auto">
-      <div class="flex justify-between">
+      <div class="flex justify-between items-center">
         <a
           href="https://www.owlting.com/experiences/?l=tw&curr=TWD"
           target="_blank"
@@ -29,7 +29,10 @@
           class="md:hidden"
           @click="toggleModal"
         >
-          A
+          <i
+            :class="isOpenMenu ? 'owl-status-error' : 'owl-grid-three-h'"
+            :style="isOpenMenu ? 'font-size: 20px;' : ''"
+          />
         </div>
       </div>
     </div>

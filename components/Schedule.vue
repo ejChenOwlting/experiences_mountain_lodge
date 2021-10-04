@@ -1,11 +1,11 @@
 <template>
   <section
-    class="schedule-section"
     id="schedule"
+    class="schedule-section"
   >
     <div class="container mx-auto flex flex-col items-center">
       <img
-        :src="require('~/assets/img/title-schedule.svg')"
+        :src="require('~/assets/img/title-schedule.png')"
         class="section-title"
         alt="title-schedule"
         width="209"
@@ -46,5 +46,7 @@ export default {
 <style lang="sass" scoped>
 .schedule-section
   @apply bg-cover
-  background-image: url('~/assets/img/bg-schedule.png')
+  background-image: url('~/assets/img/bg-schedule-m.png')
+  @screen md
+    background-image: url('~/assets/img/bg-schedule.png')
 </style>

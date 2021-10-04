@@ -1,27 +1,6 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false,
-  corePlugins: {
-    container: false
-  },
-  plugins: [
-    function ({ addComponents }) {
-      addComponents({
-        '.container': {
-          maxWidth: '100%',
-          '@screen sm': {
-            maxWidth: '640px'
-          },
-          '@screen md': {
-            maxWidth: '768px'
-          },
-          '@screen lg': {
-            maxWidth: '1000px'
-          }
-        }
-      })
-    }
-  ],
   theme: {
     container: {
       center: true,

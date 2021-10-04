@@ -24,7 +24,6 @@
       </div>
       <a
         class="btn w-full"
-        style="max-width: 500px"
         href="http://www.eatgether.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -54,4 +53,5 @@
     border: 32px solid transparent
     border-top-color: #343434
     left: -16px
+    z-index: -1
 </style>
