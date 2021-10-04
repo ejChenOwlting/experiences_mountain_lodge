@@ -12,19 +12,22 @@
         height="36"
       >
       <div class="flex flex-col md:flex-row mb-5">
-        <img
-          class="md:mr-12 mb-4 md:mb-0"
-          src="https://static.owlting.com/experiences_mountain_lodge/tickets-2.png"
-          alt="tickets-2"
-          width="340"
-          height="238"
-        >
-        <img
-          src="https://static.owlting.com/experiences_mountain_lodge/tickets-20.png"
-          alt="tickets-2"
-          width="340"
-          height="238"
-        >
+        <div class="block md:mr-12 mb-4 md:mb-0">
+          <img
+            src="https://static.owlting.com/experiences_mountain_lodge/tickets-2.png"
+            alt="tickets-2"
+            width="340"
+            height="238"
+          >
+        </div>
+        <div>
+          <img
+            src="https://static.owlting.com/experiences_mountain_lodge/tickets-20.png"
+            alt="tickets-2"
+            width="340"
+            height="238"
+          >
+        </div>
       </div>
       <p class="mb-8" style="max-width: 600px">
         看到這，代表你已被朱老爺委託為「協調者」，協助互相贈恨、埋怨、誤解的繼承人們搞清楚已逝的朱老爺究竟在玩什麼把戲<br>
@@ -54,5 +57,5 @@ export default {
   @apply bg-cover
   background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-tickets-m.jpg')
   @screen md
-    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-tickets.png')
+    background-image: url('https://static.owlting.com/experiences_mountain_lodge/bg-tickets.jpg')
 </style>

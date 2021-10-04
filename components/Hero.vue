@@ -1,27 +1,29 @@
 <template>
   <section class="hero-section">
     <div class="container mx-auto md:flex md:justify-end">
-      <div
-        class="hero-title"
-        style="max-width: 500px"
-      >
-        <img
-          class="md:mb-2"
-          src="https://static.owlting.com/experiences_mountain_lodge/logo.png"
-          alt="logo"
-          width="455"
-          height="185"
+      <div class="hero-title">
+        <div
+          class="h-full flex flex-col justify-between items-center md:block mx-auto md:mx-0"
+          style="max-width: 500px"
         >
-        <div>
-          <div class="tracking-widest mb-4 md:mb-6">
-            〖全台唯一 兩天一夜實境解謎戲〗<br>奧丁丁獨家
-          </div>
-          <a
-            class="btn w-full"
-            href="#intro"
+          <img
+            class="md:mb-2 mx-auto"
+            src="https://static.owlting.com/experiences_mountain_lodge/logo.png"
+            alt="logo"
+            width="400"
+            height="160"
           >
-            進入山莊
-          </a>
+          <div class="text-center w-full">
+            <div class="tracking-widest mb-4 md:mb-6">
+              〖全台唯一 兩天一夜實境解謎戲〗<br>奧丁丁獨家
+            </div>
+            <a
+              class="btn w-full"
+              href="#intro"
+            >
+              進入山莊
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -46,8 +48,8 @@ $p-bottom: 36px
       @apply hidden
 
 .hero-title
-  @apply flex flex-col justify-between h-full pb-20 relative z-10
+  @apply pb-20 relative z-10
   height: calc(100vh - #{$p-top} - #{$p-bottom})
   @screen md
-    @apply block w-1/2 px-6 pt-24 pb-0
+    @apply w-1/2 px-6 pt-24 pb-0
 </style>

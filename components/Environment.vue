@@ -84,7 +84,7 @@
         <img
           class="w-full mx-auto"
           style="max-width: 800px"
-          src="https://static.owlting.com/experiences_mountain_lodge/environment-${activeImgIndex}.png"
+          :src="`https://static.owlting.com/experiences_mountain_lodge/environment-${activeImgIndex}.png`"
           :alt="`environment-${activeImgIndex}`"
           width="500"
           height="400"
