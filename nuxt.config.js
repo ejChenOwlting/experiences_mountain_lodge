@@ -1,4 +1,4 @@
-const BASE_ROUTE = ''
+const BASE_ROUTE = 'https://www.owlting.com/experiences/ldp/themistlodge2'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
