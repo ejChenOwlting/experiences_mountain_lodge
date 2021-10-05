@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center">
         <a
           class="banner-container block mb-12 md:mb-20"
-          href="http://www.eatgether.com/"
+          href="https://egapp.us/owlting2021"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -24,7 +24,7 @@
       </div>
       <a
         class="btn w-full"
-        href="http://www.eatgether.com/"
+        href="https://page.line.me/?accountId=640dyzkm&openerPlatform=native&openerKey=talkroom%3Amessage#mst_challenge=j8HRt9CUyDdMXGax_SoOcfDfLR_cxMUWetbHKvRtu-E"
         target="_blank"
         rel="noopener noreferrer"
       >

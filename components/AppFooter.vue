@@ -16,7 +16,7 @@
               認識奧丁丁體驗
             </div>
             <a
-              class="block"
+              class="inline-block"
               href="https://www.owlting.com/experiences/about?l=tw&curr=TWD"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,16 +41,17 @@
           <div class="text-grey-lighter mb-2">
             奧丁丁集團
           </div>
-          <div>
+          <div
+            v-for="service in serviceList"
+            :key="service.enLabel"
+          >
             <a
-              v-for="service in serviceList"
-              :key="service.enLabel"
               :href="service.link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {{ service.label }}
-              <small class="block text-grey-lightest">
+              <span class="inline-block">{{ service.label }}</span><br>
+              <small class="inline-block text-grey-lightest" style="transform: translateY(-5px)">
                 {{ service.enLabel }}
               </small>
             </a>
@@ -60,13 +61,13 @@
           <div class="text-grey-lighter mb-2">
             網站條款
           </div>
-          <div>
+          <div
+            v-for="term in termList"
+            :key="term.label"
+          >
             <a
-              v-for="term in termList"
-              :key="term.label"
               :href="term.link"
               target="_blank"
-              class="block"
               rel="noopener noreferrer"
             >
               {{ term.label }}
