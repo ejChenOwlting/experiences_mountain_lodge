@@ -3,7 +3,7 @@
     <div class="container mx-auto flex flex-col items-center">
       <div
         class="flex mb-12"
-        style="max-width: 500px"
+        style="max-width: 540px"
       >
         <div class="text-center">
           <img

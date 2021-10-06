@@ -88,5 +88,9 @@ export default {
       require('autoprefixer'),
       require('cssnano')
     ]
-  }
+  },
+
+  router: {
+    base: '/experiences/ldp_be/themistlodge2'
+  },
 }
