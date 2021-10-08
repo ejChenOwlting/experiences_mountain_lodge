@@ -52,11 +52,20 @@
           關於奧丁丁體驗
         </h3>
         <p
-          class="text-center"
+          class="text-center mb-10"
           style="max-width: 600px"
         >
           「奧丁丁體驗」是精選全世界特色體驗的預訂平台，我們的成立來自於對世界的好奇與探索，充滿上山下海的精神、享受在地嚮導深入的導覽、熱愛發掘獨特的生活態度，在這裡你可以找到專屬於你的特色體驗！
         </p>
+
+        <a
+          class="btn w-full"
+          href="https://www.owlting.com/experiences/?curr=TWD&l=tw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          看更多特色體驗
+        </a>
       </div>
     </div>
   </section>

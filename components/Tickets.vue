@@ -36,7 +36,7 @@
       </p>
       <a
         class="btn w-full"
-        href="https://utm.to/3p3jsd"
+        href="https://www.owlting.com/experiences/products/6105?l=tw&curr=TWD"
         target="_blank"
         rel="noopener noreferrer"
       >

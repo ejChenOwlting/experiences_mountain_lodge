@@ -14,11 +14,11 @@
             height="40"
           >
         </a>
-        <nav class="text-lg -mx-6 hidden md:flex">
+        <nav class="-ml-6 hidden md:flex md:items-center">
           <div
             v-for="menu in menuList"
             :key="menu.hash"
-            class="px-6"
+            class="px-6 text-lg"
           >
             <a
               :href="`#${menu.hash}`"
@@ -27,6 +27,14 @@
               {{ menu.label }}
             </a>
           </div>
+          <a
+            class="block btn"
+            href="https://www.owlting.com/experiences/products/6105?l=tw&curr=TWD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            購買入場券
+          </a>
         </nav>
 
         <div
@@ -76,8 +84,8 @@ export default {
       isOpenMenu: false,
       menuList: [
         { label: '背景故事', hash: 'intro' },
-        { label: '拍賣會日程', hash: 'schedule' },
-        { label: '入場券', hash: 'tickets' }
+        { label: '活動日程', hash: 'schedule' },
+        { label: '活動方案', hash: 'tickets' }
       ]
     }
   },

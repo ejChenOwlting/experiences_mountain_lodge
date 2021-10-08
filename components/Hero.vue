@@ -19,9 +19,7 @@
             </div>
             <a
               class="btn w-full"
-              href="https://utm.to/3p3jsd"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#intro"
             >
               進入山莊
             </a>

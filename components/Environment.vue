@@ -13,9 +13,7 @@
         這次的拍賣會，將舉辦在台東太麻里的一間山莊<br>
         請準備好走入謎霧環山，解開未知的謎題
       </p>
-      <div
-        class="img-list md:grid md:grid-cols-3 md:gap-4"
-      >
+      <div class="img-list md:grid md:grid-cols-3 md:gap-4 mb-10">
         <div
           class="img-container"
           @click="openImgModal(1)"
@@ -39,8 +37,7 @@
           >
         </div>
         <div
-          class="md:grid md:grid-rows-2 md:grid-flow-col md:gap-4"
-          style="height: 350px"
+          class="img-list__right md:grid md:grid-rows-2 md:grid-flow-col md:gap-4"
         >
           <div
             class="img-container"
@@ -66,6 +63,15 @@
           </div>
         </div>
       </div>
+
+      <a
+        class="btn w-full"
+        href="https://www.owlting.com/experiences/products/6105?l=tw&curr=TWD"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        購買入場券
+      </a>
     </div>
 
     <transition name="fade">
@@ -73,6 +79,7 @@
       v-if="isOpenImgModal"
       v-body-scroll-lock="isOpenImgModal"
       class="img-modal"
+      @click="closeImgModal"
     >
       <div class="container mx-auto flex items-center h-screen relative">
         <div
@@ -88,6 +95,7 @@
           :alt="`environment-${activeImgIndex}`"
           width="500"
           height="400"
+          @click.stop
         >
       </div>
     </div>
@@ -126,6 +134,10 @@ export default {
   img
     @apply w-full h-full object-center object-cover
     transition: transform .2s
+
+  &__right
+    @screen md
+      height: 350px
 
 .img-container
   @apply overflow-hidden relative mb-4 md:mb-0 cursor-pointer
