@@ -4,21 +4,21 @@
       <div class="flex flex-col items-center">
         <a
           class="banner-container block mb-12 md:mb-20"
-          href="https://egapp.us/owlting2021"
+          href="https://www.owlting.com/experiences/ldp/tw-adventure"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             class="hidden md:block"
-            src="https://static.owlting.com/experiences_mountain_lodge/eatgether.png"
-            alt="eatgether"
+            src="https://static.owlting.com/experiences_mountain_lodge/tw-adventure.jpg"
+            alt="tw-adventure"
             width="1000"
             height="320"
           >
           <img
             class="md:hidden"
-            src="https://static.owlting.com/experiences_mountain_lodge/eatgether-mobile.png"
-            alt="eatgether-mobile"
+            src="https://static.owlting.com/experiences_mountain_lodge/tw-adventure-mobile.jpg"
+            alt="tw-adventure-mobile"
             width="1000"
             height="320"
           >
@@ -26,21 +26,21 @@
 
         <a
           class="banner-container block mb-24"
-          href="https://www.owlting.com/experiences/ldp/eastern-taiwan"
+          href="https://landingpage.owlting.com/stimulus-vouchers"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             class="hidden md:block"
-            src="https://static.owlting.com/experiences_mountain_lodge/experiences.png"
-            alt="experiences"
+            src="https://static.owlting.com/experiences_mountain_lodge/stimulus-vouchers.jpg"
+            alt="stimulus-vouchers"
             width="1000"
             height="320"
           >
           <img
             class="md:hidden"
-            src="https://static.owlting.com/experiences_mountain_lodge/experiences-mobile.png"
-            alt="experiences-mobile"
+            src="https://static.owlting.com/experiences_mountain_lodge/stimulus-vouchers-mobile.jpg"
+            alt="stimulus-vouchers-mobile"
             width="1000"
             height="320"
           >
